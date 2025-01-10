@@ -853,7 +853,7 @@ end Footer section
     .footer {
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 60vh;
         text-align: center;
     }
 
@@ -888,6 +888,7 @@ end Footer section
     }
 
     .footer .footer-signature {
+        bottom: 0;
         font-size: 10px;
         letter-spacing: 5px;
     }

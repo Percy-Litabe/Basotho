@@ -341,7 +341,7 @@ Media Queries
         flex-direction: column;
         align-items: center;
         gap: 50px;
-        height: 60vh;
+        height: 70vh;
     }
 
     .price-card-head {
@@ -363,15 +363,14 @@ Media Queries
     /*---Footer section---*/
 
     .footer {
-        
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 75vh;
         text-align: center;
     }
 
     .footer .footer-container {
-        height: 60vh;
+        height: 75vh;
         h1 {
             font-size: 1.5rem;
         }
@@ -401,6 +400,7 @@ Media Queries
     }
 
     .footer .footer-signature {
+        bottom: 0;
         font-size: 10px;
         letter-spacing: 5px;
     }

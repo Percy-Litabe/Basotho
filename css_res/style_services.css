@@ -436,10 +436,10 @@ Media Queries
     }
 
     .services-list {
-        bottom: 600px;
+        bottom: 480px;
     }
     #services-list {
-        bottom: 540px;
+        bottom: 420px;
     }
 
     .service-card {
@@ -462,7 +462,7 @@ Media Queries
     }
     
     .end-parag-services .parag-content {
-        height: 25vh;
+        height: 30vh;
         padding: 0 5px;
         margin: 20px 12px;
         font-size: 1.6rem;
@@ -474,12 +474,12 @@ Media Queries
     .footer {
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 75vh;
         text-align: center;
     }
 
     .footer .footer-container {
-        height: 60vh;
+        height: 75vh;
         h1 {
             font-size: 1.5rem;
         }
@@ -509,6 +509,7 @@ Media Queries
     }
 
     .footer .footer-signature {
+        bottom: 0;
         font-size: 10px;
         letter-spacing: 5px;
     }

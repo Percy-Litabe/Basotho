@@ -357,13 +357,13 @@ end Footer section
         padding: 0;
         margin: 0 10px;
         margin-bottom: 10px;
-        height: 77vh;
+        height: 105vh;
         background-color: aliceblue;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .about-head h1 {
     padding: 15px 0;
-        margin: 0;
+        margin: 10px 0;
         font-size: 2rem;
     }
     .about-head p {
@@ -417,12 +417,12 @@ end Footer section
     .footer {
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 75vh;
         text-align: center;
     }
 
     .footer .footer-container {
-        height: 60vh;
+        height: 75vh;
         h1 {
             font-size: 1.5rem;
         }
@@ -452,6 +452,7 @@ end Footer section
     }
 
     .footer .footer-signature {
+        bottom: 0;
         font-size: 10px;
         letter-spacing: 5px;
     }

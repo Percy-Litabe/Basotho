@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basotho Agency</title>
+    <link rel="stylesheet" href="css_res/style_home.css">
+    <meta name="description" content="Basotho Housekeeping"> 
+    <meta name="keywords" content="cleaning, housekeeping, maid, clean,laundry, washing, gardening, landscaping, Gauteng, Johannesburg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap|Arapey" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80fed80d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="intro">
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="home" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="pages/about.html" class="nav-link">about us</a></li>
+                <li class="nav-item"><a href="pages/services.html" class="nav-link">services</a></li>
+                <li class="nav-item"><a href="pages/price.html" class="nav-link">pricing</a></li>
+                <li class="nav-item"><a href="pages/contact.html" class="nav-link">contact</a></li>
+            </ul>
+            <div class="call-btn">
+                <button onclick="window.location.href='contact.html#call-now'"><span class="material-symbols-outlined">
+                    Call
+                </span>
+                Call Us Now</button>                           
+            </div>
+            <li onclick="showRespNav()" style="list-style: none; text-align:right; padding: 15px 15px;"><a><i class="fa-duotone fa-solid fa-bars fa-2x"></i></li>
+            <span class="et-hero-tab-slider"></span>
+        </nav>
+
+        <nav class="resp_navbar" id="navbar" style="display: none;">
+            <li onclick="hideRespNav()" style="list-style: none; text-align:right; padding: 15px 15px;"><i class="fa-solid fa-xmark fa-2x"></i></li>
+            <ul class="navbar-nav">
+                <li class="resp-nav-item"><a href="home" class="nav-link">home</a></li>
+                <li class="resp-nav-item"><a href="pages/about.html" class="nav-link">about us</a></li>
+                <li class="resp-nav-item"><a href="pages/services.html" class="nav-link">services</a></li>
+                <li class="resp-nav-item"><a href="pages/price.html" class="nav-link">pricing</a></li>
+                <li class="resp-nav-item"><a href="pages/contact.html" class="nav-link">contact</a></li>
+            </ul>
+            <div class="call-btn">
+                <button onclick="window.location.href='contact.html#call-now'"><span class="material-symbols-outlined">
+                    Call
+                </span>
+                Call Us Now</button>                           
+            </div>
+            <span class="et-hero-tab-slider"></span>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <div class="wb-wrapper">
+        <div class="landing-pg">
+            <img src="assets/backround.jpg" alt="Cleaning Material" class="background-img"> 
+        </div>
+        <div class="brand-name-sec">
+            <div class="brand-text">
+                <h1>Basotho Agency</h1>
+                <h3>your cleanliness, is our business</h3>
+            </div>
+            <a href="pages/contact.html#call-now" class="btn">Book a maid</a>
+        </div>
+        <!-- About the company section -->
+        <div class="aboutus">
+            <h1 class="sec-heading">Who we are</h1>
+            <div class="aboutus-text">
+                <p>
+                    At Basotho Housekeeping, we believe in providing top-quality
+                        cleaning services to homes across Gauteng, ensuring a clean
+                        and comfortable space for our clients.
+                    <br>
+                    <br>
+                        Founded by Elizabeth, Basotho Housekeeping is dedicated to
+                        delivering exceptional residential cleaning services to our
+                        valued customers. With a passion for cleanliness and attention
+                            to detail, we strive to exceed expectations with every clean.
+                </p>
+            </div>
+        </div>
+            
+        <div class="meet-team">
+            <img src="assets/images/team.jpg" alt="Team" class="team_img">
+            <div class="para-image">
+                <h4>Meet our incredible team of women!</h4>
+                <p class="scroll-text">
+                    Each brings unique skills and energy, driving our success <br>
+                    and fostering a supportive environment. Together, they make a <br>
+                    difference every day!
+                </p>
+            </div>
+        </div>
+            <!-- end About the company section -->
+    
+            <div class="backround-1"></div>
+    
+            <!-- Services offered section -->
+            <section class="info-sec">
+                <img src="assets/images//woodFloor.jpg" class="about-image-bg">
+                <h1 class="sec-heading">What we offer</h1>
+                <div class="card">
+                    <div class="box">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">local_laundry_service</span>
+                        </div>
+                        <div class="content">
+                            <h2>Housekeeping</h2>
+                            <p>From<br>
+                                <b>R 2999,99 p/m</b>
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                                cleaning_bucket
+                            </span>
+                        </div>
+                        <div class="content">
+                            <h2>Gardening</h2>
+                            <p>From <br>
+                                <b>R 2499,99 p/m</b>
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- end Services offered section -->
+    
+            <div class="backround-2"></div>
+    
+            <!-- Start employee client count.-->
+             <!--
+            <div class="counter-wrapper">
+                <div class="employee-client">
+                    <div class="counts">
+                        <h5>Personnel</h5>
+                        <h6><span data-count="12">0</span></h6>
+                    </div>
+                    <div class="counts">
+                        <h5>Clients/Homes</h5>
+                        <h6><span data-count="12">0</span></h6>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!-- End employee client count.-->
+    
+            <!--Get a quotation.-->
+            <div class="quote-section">
+                <div class="quote-sec">
+                    <div class="quote-sec-1">
+                        <div class="quote-sec-heading1">
+                           <div class="quote-sec-content">
+                            <h1>Housekeeping</h1>
+                            <button type="button" class="btn-trans">Get quote</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="quote-sec-2">
+                        <div class="quote-sec-heading1">
+                           <div class="quote-sec-content">
+                            <h1>Gardening</h1>
+                            <button type="button" class="btn-trans">Get quote</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Get a quotation end -->
+    
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h1>Our Company</h1>
+                            <p>
+                                <ul>
+                                    <li><a href="pages/about.html#about_company">About Us</a></li>
+                                    <li><a href="pages/contact.html#faq">FAQ</a></li>
+                                    <li><a href="pages/services.html">Our Services</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="footer-col">
+                            <h1>Find Us At</h1>
+                            <p>
+                                1616 Extension 2,<br>
+                                Orange Farm, Johannesburg <br>
+                                2333 <br>
+                                    <i class="fa-solid fa-phone fa-1x"><a>(000) 000 1234</a></i>
+                                       <br>
+                                     <i class="fa-sharp-duotone fa-solid fa-envelope fa-1x"></i><a href="mailto:basotho.housekeeping@gmail.com">basotho.housekeeping@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="footer-col">
+                            <h1>Follow Us</h1>
+                            <p class="social-links">
+                                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                            </p>
+                            <h1>Working Hours</h1>
+                            <p>
+                                Mon - Fri: 08:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-signature">Copyright<i class="fa-solid fa-copyright"></i> Website by <a href="#"><span>Z E A L</span></a> Technologies</div>
+                </div>
+            </footer>
+            <!-- end Footer-->
+    </div>
+
+    <script src="res_misc/jquery-3.7.1.js"></script>
+    <script src="jss_res/script.js"></script>
+</body>
+</html>

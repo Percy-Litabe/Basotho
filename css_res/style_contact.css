@@ -1,0 +1,313 @@
+:root {
+    --bright-orange: #ff9500;
+    --light-ordange:#FFBF69;
+    --muted-pink: #CB997E;
+    --pale-peach: #FFE8D6;
+    --blue: rgb(0, 9, 34);
+    --transition: all 0.5s ease-in-out;
+
+    --background: #CDFADB;
+    --text: #365486;
+    --accent: #7FC7D9;
+    --footer: #0F1035;
+}   
+*{
+    font-family: 'Open sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+/*---Navigation section---*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    z-index: 1000;
+    text-align: center;
+    background-color: #000;
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s linear;
+}
+.navbar.scrolled {
+    background-color: var(--footer);
+}
+.navbar.scrolled .nav-item a {
+    color: wheat;
+}
+.nav-item {
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 15px;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    a {
+        text-decoration: none;
+        font-family:'Courier New', Courier, monospace;
+        background-color: transparent;
+        text-align: center;
+        color: var(--text);
+        font-weight: bold;
+        padding: 10px 13px 10px 13px;
+        text-transform: uppercase;
+    }
+}
+.nav-item a:hover{
+    color: whitesmoke;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    background: var(--accent);
+    border-radius: 8px 8px 8px 8px;
+}
+.navbar .call-btn button { 
+        position: absolute;
+        top: 0%;
+        right: 105px;
+        margin-top: 8px;
+        border-radius: 25px 25px 25px 25px;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        background-image: linear-gradient(to bottom right, rgb(162, 255, 0), aliceblue );
+        padding: 5px 20px 5px 20px;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+}
+.navbar .call-btn:hover button {
+        transform: translateY(-3px);
+        opacity: 0.8;
+}
+/*---End navigation bar---*/
+
+/*---Start heading---*/
+.heading {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 12vh;
+    text-align: center;
+}
+/*---End heading---*/
+
+/*---Start container---*/
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+}
+/*---End container---*/
+
+/*---Start working hours---*/
+.work-hrs-container {
+    position: relative;
+    padding-bottom: 50px;
+}
+.work-hrs-grp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35svh;
+    margin: 0 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: space-evenly;
+    background-color: thistle;
+}
+.call-now {
+    text-decoration: none;
+}
+.work-hrs p {
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+.contact-addr p {
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+.footer-col .social-links {
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 12px;
+}
+/*---End working hours---*/
+
+@media screen and (max-width: 800px) {
+    .navbar.scrolled, .nav-item a {
+        transition: none;
+        background-color: transparent;
+    }
+
+    .nav-item, .call-btn {
+        display: none;
+    }
+ }
+
+@media screen and (max-width: 992px) {
+    
+    /*---Responsive navigation bar---*/
+    .resp_navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        justify-items: center;
+        z-index: 9999;
+    }
+
+    .resp-nav-item {
+        margin: 0;
+        font-size: 1rem;
+        font-family: Open Sans;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    .resp_navbar .call-btn {
+        width: 100%;
+    }
+
+    .resp_navbar .call-btn button { 
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+        font-family: Open Sans;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: none;
+        background-image: linear-gradient(to bottom right, rgb(162, 255, 0), aliceblue );
+        padding: 2px 10px;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    .resp_navbar ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    /*---End responsive navigation bar---*/
+
+    /**/
+    .faq-section {
+        background-color: white;
+        margin-bottom: 60px;
+        padding: 20px 10px;
+    }
+
+    .hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .list-ques {
+        list-style: none;
+        filter: blur();
+    }
+
+    .faq-head h1 {
+        font-size: 2rem;
+        font-family: Open sans;
+        text-align: center;
+    }
+
+    .faq-ques {
+        border-radius: 25px;
+    }
+    .faq-ques h3 {
+        display: flex;
+        flex-direction: row;
+        margin: 15px 0;
+        padding: 15px 0;
+        height: auto;
+        font-size: 1.3rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: rgb(188, 187, 187);
+    }
+    .faq-ques p {
+        display: none;
+        position: relative;
+        bottom: 18px;
+        height: auto;
+        padding: 5px 10px;
+        border-radius: 25px;
+        background-color: gray;
+    }
+
+    /**/
+
+    /*---Working hours section---*/
+
+    .work-hrs-grp {
+        width: 100%;
+        height: 70vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*---End working hours section---*/
+}
